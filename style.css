@@ -1,0 +1,87 @@
+  @font-face {
+    font-family: "PTSans";
+    src: url("/assets/font/Sandler\ Trial.otf");
+  }
+
+  h1{
+    text-align: center;
+  }
+  
+  body {
+    text-align: center;
+    background-image: url("/assets/image/tile.jpg");
+  }
+  
+  #tasksForm {
+    width: 320px;
+    height: 180px;
+    background-image: url("/assets/image/formbg.jpg");
+    background-size: contain;
+    background-position: center;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    padding: 0;
+    margin: 50px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+  }
+  
+  .task {
+    background-image: url("/assets/image/notebg.png");
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  }
+  
+  .task .taskText {
+    display: block;
+    margin-top: 16px;
+    text-align: left;
+    margin-left: 20px;
+    min-height: 150px;
+    min-width: 250px;
+    max-width: 100px;
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  .task .icon button {
+    margin-left: 150px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    opacity: 0;
+  }
+  
+  .task:hover .icon button {
+    opacity: 1;
+  }
+  
+  .task .taskDate,
+  .task .taskTime {
+    text-align: left;
+    margin-left: 10px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn-container {
+    animation: fadeIn 2s;
+  }
+  
+  
