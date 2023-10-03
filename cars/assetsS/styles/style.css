@@ -1,0 +1,36 @@
+*{
+    text-align: center;
+}
+.classForm{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px, 0px,2px 2px black;
+    width: 15%;
+    margin: auto;
+    padding: 20px;
+}
+input {
+    margin-bottom: 20px;
+}
+#dataCar{
+    border-collapse: collapse;
+    width: 50%;
+}
+#dataCar td,#dataCar th{
+border: 1px solid blue;
+padding: 8px;
+}
+#dataCar tr:nth-child(even){
+    background-color: aquamarine;
+}
+#dataCar tr:hover{
+    background-color: cornflowerblue;
+}
+
+#dataCar th{
+    padding: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: cadetblue;
+    color: beige;
+}

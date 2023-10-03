@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/javaScript.js"></script>
+    <link rel="stylesheet" href="assetsS/styles/style.css">
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="carForm">
+    <h1> cars shopping</h1><hr>
+    <label type="name">car manufacture:</label>
+    <select id="brand" name="brand" required>
+        <option>Toyota</option>
+        <option>Hyundai</option>
+        <option>Kia</option>
+        <option>Another</option>
+    </select><br> <br>
+    <input type="text" id="carModel" placeholder="car model"><br><br> 
+    <input type="number" id="date" placeholder="Manufacturing date" max="2023" min="1994"><br><br> 
+    <input type="url" id="imageURL" placeholder="enter first image"><br><br>
+
+    <select type="text" id="degem">
+        <option>privet</option>
+        <option>company</option>
+        <option>taxi</option>
+        <option>disabled</option>
+    </select><br><br>
+
+    <input type="text" id="monthPrice" placeholder="price for a month"><br><br>
+    <label for="checkbox">have a sunroof</label>
+    <input type="checkbox" id="checkbox"><br><br>
+
+    <input type="button" value="send" onclick="loadImage()">
+    </div>
+    </form>
+    <table id="dataCar">
+        <tr>
+            <th>car model</th>
+            <th>Manufacturing date</th>
+            <th>image</th>
+            <th>before me </th>
+            <th>month price</th>
+        </tr>
+        <tbody id="data"></tbody>
+    </table>
+</body>
+</body>
+</html>
